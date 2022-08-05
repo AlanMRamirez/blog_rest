@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-xgozc)7w!!_2$u-6z(d#j+kf1z=!s1j)dk79)i$rz@24csk7(_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -72,12 +72,11 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'User': 'sppfbaggzjcfmd',
         'NAME': 'd96815djv317fh',
+        'USER': 'sppfbaggzjcfmd',
         'PASSWORD': 'a626af0a771f2ad57c7aee6551d4675462ea6b2b69f766877835baa44a00ecc1',
         'HOST': 'ec2-3-213-228-206.compute-1.amazonaws.com',
         'PORT': 5432
-
     }
 }
 
